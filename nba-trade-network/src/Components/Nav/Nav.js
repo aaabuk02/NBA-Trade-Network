@@ -5,16 +5,41 @@ import { Save, Delete, Menu, SportsBasketball } from "@mui/icons-material";
 export default function Nav() {
   return (
     <div>
-      <AppBar>
+      <AppBar
+        sx={{
+          position: "fixed",
+        }}
+      >
         <Toolbar>
           <Box display="flex" flexGrow={1}>
             <SportsBasketball />
             <div>NBA Trade Network</div>
           </Box>
 
-          <IconButton href="/About">About</IconButton>
-          <IconButton href="/Trade">Trade</IconButton>
-          <IconButton href="/Contact">Contact</IconButton>
+          <IconButton
+            href="/About"
+            sx={{
+              color: "white",
+            }}
+          >
+            About
+          </IconButton>
+          <IconButton
+            href="/Trade"
+            sx={{
+              color: "white",
+            }}
+          >
+            Trade
+          </IconButton>
+          <IconButton
+            href="/Contact"
+            sx={{
+              color: "white",
+            }}
+          >
+            Contact
+          </IconButton>
         </Toolbar>
       </AppBar>
     </div>
